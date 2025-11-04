@@ -24,3 +24,15 @@ west build -p always -b nice_nano_v2 -s zmk/app -- -DSHIELD=corne_right  -DZMK_C
 ```
 
 Remove `-s zmk/app` if you are building in zmk folder.
+
+If you don't already have west workspace, run these commands to create one:
+
+```
+west init -l $HOME/Applications/zmk/app/
+
+cd $HOME/Applications/zmk
+
+west update
+west zephyr-export
+
+```

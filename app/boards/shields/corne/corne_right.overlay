@@ -11,7 +11,15 @@
 };
 
 
-&default_kscan {
+&kscan0 {
+    row-gpios
+        = <&gpio0 02 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&gpio1 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&gpio1 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        ;
+
+
     col-gpios
             = <&gpio0 11 (GPIO_ACTIVE_HIGH| GPIO_PULL_DOWN)>
             , <&gpio1 0 (GPIO_ACTIVE_HIGH| GPIO_PULL_DOWN)>
