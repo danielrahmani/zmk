@@ -36,3 +36,5 @@ west update
 west zephyr-export
 
 ```
+
+For nice!nanon V2 pin map look at [here](https://nicekeyboards.com/docs/nice-nano/pinout-schematic/).
