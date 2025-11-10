@@ -55,7 +55,7 @@ jobs:
       - name: Export Zephyr CMake package (west zephyr-export)
         run: west zephyr-export
       - name: Use Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: "14.x"
       - name: Install @actions/artifact
@@ -189,7 +189,7 @@ jobs:
         with:
           persist-credentials: false
       - name: Use Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: "14.x"
       - name: Install js-yaml
@@ -218,7 +218,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Use Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: "14.x"
       - name: Install js-yaml
@@ -347,7 +347,7 @@ jobs:
         with:
           persist-credentials: false
       - name: Use Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: "14.x"
       - name: Install js-yaml
